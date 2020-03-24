@@ -38,6 +38,15 @@ form {
   padding: 0rem;
   margin: 0rem;
 }
+.center {
+  text-align: center;
+  align-items: center;
+}
+.header {
+  margin: 5rem;
+  text-align: center;
+  font-weight: bolder;
+}
 .btn {
   display: block;
   border: solid 0px;
@@ -187,7 +196,6 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
 }
-
 
 @media only screen and (min-width: 600px) {
   .margins {
