@@ -7,7 +7,7 @@
   /* Root variables for color schemes */
 }
 body {
-  background: #fffffa;
+  background: #e0e5ec;
 }
 h1,
 h2,
@@ -153,6 +153,8 @@ a {
   margin: inherit;
   text-decoration: none;
   text-decoration-color: inherit;
+  outline: none;
+  border: none;
 }
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
