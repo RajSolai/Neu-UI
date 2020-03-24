@@ -7,7 +7,7 @@
   /* Root variables for color schemes */
 }
 body {
-  background: #e0e5ec;
+  background: #fffffa;
 }
 h1,
 h2,
@@ -43,7 +43,7 @@ form {
   align-items: center;
 }
 .header {
-  margin: 5rem;
+  margin: 2rem;
   text-align: center;
   font-weight: bolder;
 }
