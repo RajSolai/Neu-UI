@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'common';
+@import 'buttons';
+@import 'card';
+@import 'form';
+
+@font-face {
+  font-family: $fontname;
+  src: url($fonturl);
+}
+:root {
+  font-family: $fontname;
+  font-size: $global-font-size;
+}

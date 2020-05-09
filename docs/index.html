@@ -4,28 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neu UI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="header" style="font-size: 5rem;">Neu UI</h1>
-    <p style="text-align: center; margin:1rem;">Neu UI , Neumorhpic based UI</p>
-    <div style="display:flex;justify-content:center;align-items: center;"><a href="http://"><button class="btn">Download</button></a></div>
-    <div class="center">
-      <h2 style="text-align:center; margin:1rem;">Cards</h2>
-      <p class="codepen" data-height="450" data-theme-id="dark" data-default-tab="html,result" data-user="rajsolai" data-slug-hash="OJVBXjr" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Neu UI-Card">
-        <span>See the Pen <a href="https://codepen.io/rajsolai/pen/OJVBXjr">
-        Neu UI-Card</a> by Solai Raj (<a href="https://codepen.io/rajsolai">@rajsolai</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    <div class="spacer"></div>
+    <div class="logo animated fadeIn delay-0.9s">
+      <img src="./assets/loutus.png" height="350" width="350" class="loutus" alt="" />
+      <div class="logo-child">
+        <h1 class="header" style="font-size: 5rem; margin: 0;">Neu UI</h1>
+        <br />
+        <p style="text-align: center;">
+          Neu UI , Neumorhpism based UI
+        </p>
+        <button class="btn" id="downlaodbtn">
+          Download
+        </button>
+        <button class="btn" id="sourcebtn">
+          Source Code
+        </button>
+      </div>
     </div>
-    <h2 style="text-align:center;margin:1rem;">Form Controls (Inputs)</h2>
-    <p class="codepen" data-height="450" data-theme-id="dark" data-default-tab="html,result" data-user="rajsolai" data-slug-hash="BaNqzYb" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Neu UI-Form Controls">
-      <span>See the Pen <a href="https://codepen.io/rajsolai/pen/BaNqzYb">
-      Neu UI-Form Controls</a> by Solai Raj (<a href="https://codepen.io/rajsolai">@rajsolai</a>)
-      on <a href="https://codepen.io">CodePen</a>.</span>
-    </p>
-    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    <div class="spacer"></div>
+    <main class="wow fadeIn">
+      <table class="doc-table">
+        <tr>
+          <th>class name</th>
+          <th>functionality</th>
+        </tr>
+        <tr>
+          <td>button</td>
+          <td>Form component button</td>
+        </tr>
+        <tr>
+          <td>container</td>
+          <td>Creates a responsive fluid container</td>
+        </tr>
+        <tr>
+          <td>cont-fluid</td>
+          <td>Create a Flexible container</td>
+        </tr>
+        <tr>
+          <td>card</td>
+          <td>Parent tag for the card</td>
+        </tr>
+        <tr>
+          <td>card-img</td>
+          <td>Creates image for the card component</td>
+        </tr>
+        <tr>
+          <td>card-header</td>
+          <td>Creates table Heading (Text)</td>
+        </tr>
+        <tr>
+          <td>card-content</td>
+          <td>Creates content for the card</td>
+        </tr>
+      </table>
     </main>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

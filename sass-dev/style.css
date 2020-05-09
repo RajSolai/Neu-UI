@@ -1,0 +1,312 @@
+/* font and text */
+/* Normal mode colours */
+/* font and text */
+/* Normal mode colours */
+/* font and text */
+/* Normal mode colours */
+body {
+  background: #e0e5ec;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: bolder;
+  text-shadow: 9px 9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.cont {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #e0e5ec;
+  -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+          box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+}
+
+@media screen and (max-width: 600px) {
+  .cont {
+    padding: 2rem;
+    margin: 2rem;
+  }
+}
+
+.margins {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.cont-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+@media only screen and (min-width: 600px) {
+  .margins {
+    padding: 2rem;
+    margin: 2rem;
+  }
+  .cont-fluid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: inherit;
+        flex-wrap: inherit;
+  }
+}
+
+/* font and text */
+/* Normal mode colours */
+.btn {
+  display: block;
+  border: solid 0px;
+  border-radius: 8px;
+  padding: 20px 20px;
+  margin: 1rem;
+  font-weight: bolder;
+  font-family: "Lato";
+  background: #e0e5ec;
+  -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+          box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+  outline: none;
+  -webkit-transition: ease-in-out 250ms;
+  transition: ease-in-out 250ms;
+}
+
+.btn:hover {
+  -webkit-box-shadow: -9px -9px 16px rgba(163, 177, 198, 0.6), 9px 9px 16px rgba(255, 255, 255, 0.5);
+          box-shadow: -9px -9px 16px rgba(163, 177, 198, 0.6), 9px 9px 16px rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+/* font and text */
+/* Normal mode colours */
+.card {
+  margin: 1rem;
+  border-radius: 8px;
+  background: "Lato";
+  -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+          box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+}
+
+.card-header {
+  padding: 0.5rem;
+}
+
+.card-content {
+  display: block;
+  padding: 1rem;
+}
+
+.card-img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+/* font and text */
+/* Normal mode colours */
+.forms,
+form {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-ctrl {
+  margin: 1rem;
+  border: solid 0px;
+  border-radius: 5px;
+  padding: 20px 20px;
+  background: #e0e5ec;
+  font-family: "Lato";
+  font-weight: 500;
+  -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+          box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+  outline: none;
+}
+
+.form-ctrl::-webkit-input-placeholder {
+  font-family: "Lato";
+  font-weight: 500;
+}
+
+.form-ctrl:-ms-input-placeholder {
+  font-family: "Lato";
+  font-weight: 500;
+}
+
+.form-ctrl::-ms-input-placeholder {
+  font-family: "Lato";
+  font-weight: 500;
+}
+
+.form-ctrl::placeholder {
+  font-family: "Lato";
+  font-weight: 500;
+}
+
+.form-ctrl::-webkit-file-upload-button {
+  display: block;
+  border: solid 0px;
+  margin-right: 2rem;
+  border-radius: 8px;
+  padding: 10px 10px;
+  font-weight: bolder;
+  font-family: "Lato";
+  background: #e0e5ec;
+  -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+          box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+  outline: none;
+  -webkit-transition: ease-in-out 250ms;
+  transition: ease-in-out 250ms;
+}
+
+.form-ctrl::-webkit-file-upload-button:hover {
+  -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+          box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+  outline: none;
+}
+
+.form-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-label {
+  margin: 1rem;
+  font-weight: 550;
+}
+
+/* Styling the Slider switch (Code is forked from W3-School Tutorials) */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch {
+  outline: none;
+  margin: 1rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+          box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.slider {
+  outline: none;
+  border-radius: 8px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e0e5ec;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider::before {
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #f9fcfb;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #21bf73;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #21bf73;
+          box-shadow: 0 0 1px #21bf73;
+}
+
+a {
+  margin: inherit;
+  text-decoration: none;
+  -webkit-text-decoration-color: inherit;
+          text-decoration-color: inherit;
+  outline: none;
+  border: none;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-ctrl {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+}
+
+:root {
+  font-family: "Lato";
+  font-size: 16px;
+}
+/*# sourceMappingURL=style.css.map */

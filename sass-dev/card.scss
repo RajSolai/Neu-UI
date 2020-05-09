@@ -1,0 +1,20 @@
+@import "variables";
+
+.card {
+  margin: 1rem;
+  border-radius: 8px;
+  background: $fontname;
+  box-shadow: 9px 9px 16px $dark-shadow, -9px -9px 16px $dark-shadow;
+}
+.card-header {
+  padding: 0.5rem;
+}
+.card-content {
+  display: block;
+  padding: 1rem;
+}
+.card-img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}

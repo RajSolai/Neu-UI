@@ -1,0 +1,25 @@
+/* font and text */
+/* Normal mode colours */
+.card {
+  margin: 1rem;
+  border-radius: 8px;
+  background: "Lato";
+  -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+          box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+}
+
+.card-header {
+  padding: 0.5rem;
+}
+
+.card-content {
+  display: block;
+  padding: 1rem;
+}
+
+.card-img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=card.css.map */

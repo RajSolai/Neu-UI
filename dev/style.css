@@ -1,8 +1,6 @@
 @font-face {
   font-family: sfpro-apple;
-  src: url(./fonts/SF-Pro-Display-Regular.otf);
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
+  src: url(assets/fonts/SF-Pro-Display-Regular.otf);
 }
 :root {
   font-family: sfpro-apple;
@@ -10,35 +8,6 @@
   margin: 0;
   padding: 0;
   /* Root variables for color schemes */
-}
-main {
-  text-align: center;
-  align-items: center;
-  align-content: center;
-}
-.doc-table {
-  width: 100%;
-}
-th,
-tr,
-td {
-  padding: 0.5rem;
-  border: 1px solid #000000;
-}
-.spacer {
-  margin-top: 7rem;
-}
-.logo {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-.logo-child {
-  display: flex;
-  flex-direction: column;
 }
 body {
   background: #e0e5ec;
@@ -54,6 +23,19 @@ h6 {
   font-weight: bolder;
   text-shadow: 9px 9px 16px rgba(255, 255, 255, 0.5);
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+.topbar {
+  margin: 0;
+  padding: 0;
+  background-color: #f9fcfb;
+}
+.navlinks {
+  list-style: none;
+  display: flex;
+}
 .forms,
 form {
   margin: 1rem;
@@ -68,44 +50,21 @@ form {
   box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
     -9px -9px 16px rgba(255, 255, 255, 0.5);
 }
-.loutus {
-  margin: 0;
-}
 .margins {
   padding: 0rem;
   margin: 0rem;
 }
-.center {
-  text-align: center;
-  align-items: center;
-}
-.header {
-  margin: 2rem;
-  text-align: center;
-  font-weight: bolder;
-}
 .btn {
+  display: block;
   border: solid 0px;
   border-radius: 8px;
   padding: 20px 20px;
   margin: 1rem;
   font-weight: bolder;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: sfpro-apple;
   background: #e0e5ec;
   box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
     -9px -9px 16px rgba(255, 255, 255, 0.5);
-  outline: none;
-  transition: ease-in-out 250ms;
-}
-.btn-docs {
-  border: solid 0px;
-  border-radius: 8px;
-  padding: 20px 20px;
-  margin: 1rem;
-  font-weight: bolder;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   outline: none;
   transition: ease-in-out 250ms;
 }
@@ -120,16 +79,14 @@ form {
   border-radius: 5px;
   padding: 20px 20px;
   background: #e0e5ec;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: sfpro-apple;
   font-weight: 500;
   box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
     -9px -9px 16px rgba(255, 255, 255, 0.5);
   outline: none;
 }
 .form-ctrl::placeholder {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: sfpro-apple;
   font-weight: 500;
 }
 .form-area {
@@ -215,8 +172,7 @@ input:checked + .slider:before {
   border-radius: 8px;
   padding: 10px 10px;
   font-weight: bolder;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: sfpro-apple;
   background: #e0e5ec;
   box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
     -9px -9px 16px rgba(255, 255, 255, 0.5);
@@ -247,12 +203,6 @@ input:checked + .slider:before {
 }
 
 @media only screen and (min-width: 600px) {
-  .logo {
-    flex-direction: row;
-  }
-  .logo-child {
-    display: inline;
-  }
   .margins {
     margin: 2rem;
     padding: 2rem;

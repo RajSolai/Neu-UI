@@ -1,0 +1,37 @@
+@import "variables";
+@import "mixins";
+
+body {
+  background: $back-ground;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: bolder;
+  text-shadow: 9px 9px 16px $light-shadow;
+}
+.cont {
+  @include container(column);
+}
+.margins {
+  @include margins(1rem, 1rem);
+}
+.cont-fluid {
+  @include fluid-container(column, nowrap);
+}
+
+@media only screen and (min-width: 600px) {
+  .margins {
+    @include margins(2rem, 2rem);
+  }
+  .cont-fluid {
+    @include fluid-container(row, inherit);
+  }
+}

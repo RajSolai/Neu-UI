@@ -1,0 +1,73 @@
+/* font and text */
+/* Normal mode colours */
+/* font and text */
+/* Normal mode colours */
+body {
+  background: #e0e5ec;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: bolder;
+  text-shadow: 9px 9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.cont {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #e0e5ec;
+  -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+          box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+}
+
+@media screen and (max-width: 600px) {
+  .cont {
+    padding: 2rem;
+    margin: 2rem;
+  }
+}
+
+.margins {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.cont-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+@media only screen and (min-width: 600px) {
+  .margins {
+    padding: 2rem;
+    margin: 2rem;
+  }
+  .cont-fluid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: inherit;
+        flex-wrap: inherit;
+  }
+}
+/*# sourceMappingURL=common.css.map */

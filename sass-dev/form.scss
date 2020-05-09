@@ -1,0 +1,122 @@
+@import "variables";
+
+.forms,
+form {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.form-ctrl {
+  margin: 1rem;
+  border: solid 0px;
+  border-radius: 5px;
+  padding: 20px 20px;
+  background: $back-ground;
+  font-family: $fontname;
+  font-weight: 500;
+  box-shadow: 9px 9px 16px $dark-shadow, -9px -9px 16px $dark-shadow;
+  outline: none;
+  &::placeholder {
+    font-family: $fontname;
+    font-weight: 500;
+  }
+  &::-webkit-file-upload-button {
+    display: block;
+    border: solid 0px;
+    margin-right: 2rem;
+    border-radius: 8px;
+    padding: 10px 10px;
+    font-weight: bolder;
+    font-family: $fontname;
+    background: $back-ground;
+    box-shadow: 9px 9px 16px $dark-shadow, -9px -9px 16px $dark-shadow;
+    outline: none;
+    transition: ease-in-out 250ms;
+    &:hover {
+      box-shadow: 9px 9px 16px $dark-shadow, -9px -9px 16px $dark-shadow;
+      outline: none;
+    }
+  }
+}
+.form-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.form-label {
+  margin: 1rem;
+  font-weight: 550;
+}
+
+/* Styling the Slider switch (Code is forked from W3-School Tutorials) */
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch {
+  outline: none;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 9px 9px 16px $dark-shadow, -9px -9px 16px $dark-shadow;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.slider {
+  outline: none;
+  border-radius: 8px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $back-ground;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  &::before {
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #f9fcfb;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+}
+input:checked + .slider {
+  background-color: #21bf73;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #21bf73;
+}
+a {
+  margin: inherit;
+  text-decoration: none;
+  text-decoration-color: inherit;
+  outline: none;
+  border: none;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-ctrl {
+    width: fit-content;
+  }
+}

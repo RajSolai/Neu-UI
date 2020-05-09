@@ -1,0 +1,24 @@
+@import "variables";
+
+@mixin container($flexdirection) {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: $back-ground;
+  box-shadow: 9px 9px 16px $dark-shadow, -9px -9px 16px $dark-shadow;
+  @media screen and (max-width: 600px) {
+    padding: 2rem;
+    margin: 2rem;
+  }
+}
+
+@mixin fluid-container($flexdirection,$flexwrap) {
+  display: flex;
+  flex-direction: $flexdirection;
+  flex-wrap: $flexwrap;
+}
+
+@mixin margins($margin, $padding) {
+  padding: $margin;
+  margin: $padding;
+}
