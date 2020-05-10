@@ -11,6 +11,10 @@
   padding: 0;
   /* Root variables for color schemes */
 }
+.btns{
+  display: flex;
+  flex-direction: row;
+}
 main {
   text-align: center;
   align-items: center;
@@ -116,6 +120,7 @@ code {
   display: block;
   width: 50%;
   padding: 2rem;
+  overflow: scroll;
 }
 .btn-docs {
   border: solid 0px;
