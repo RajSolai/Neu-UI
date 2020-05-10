@@ -4,4 +4,4 @@ Neu UI is a simple css libary (style) or not more than a css file that enables y
 
 # Doucmentation
 
-tobe updated
+[Click Here](https://rajsolai.github.io/Neu-UI)
