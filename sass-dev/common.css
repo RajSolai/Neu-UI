@@ -1,7 +1,9 @@
 /* font and text */
-/* Normal mode colours */
+/* Normal mode Colours */
+/* Dark Mode Colours */
 /* font and text */
-/* Normal mode colours */
+/* Normal mode Colours */
+/* Dark Mode Colours */
 body {
   background: #e0e5ec;
   margin: 0;
@@ -15,7 +17,7 @@ h4,
 h5,
 h6 {
   padding: 0;
-  margin: 0;
+  margin: 1rem;
   font-weight: bolder;
   text-shadow: 9px 9px 16px rgba(255, 255, 255, 0.5);
 }
@@ -25,8 +27,8 @@ h6 {
   padding: 1rem;
   border-radius: 8px;
   background-color: #e0e5ec;
-  -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
-          box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+  -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+          box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (max-width: 600px) {

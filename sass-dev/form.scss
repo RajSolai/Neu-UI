@@ -1,4 +1,6 @@
 @import "variables";
+@import "mixins";
+
 
 .forms,
 form {
@@ -14,7 +16,7 @@ form {
   background: $back-ground;
   font-family: $fontname;
   font-weight: 500;
-  box-shadow: 9px 9px 16px $dark-shadow, -9px -9px 16px $dark-shadow;
+  @include neu-shadows($back-ground, $dark-shadow, $light-shadow);
   outline: none;
   &::placeholder {
     font-family: $fontname;
@@ -29,11 +31,14 @@ form {
     font-weight: bolder;
     font-family: $fontname;
     background: $back-ground;
-    box-shadow: 9px 9px 16px $dark-shadow, -9px -9px 16px $dark-shadow;
+    @include neu-shadows($back-ground, $dark-shadow, $light-shadow);
     outline: none;
     transition: ease-in-out 250ms;
     &:hover {
-      box-shadow: 9px 9px 16px $dark-shadow, -9px -9px 16px $dark-shadow;
+      @include neu-hover-shadow($dark-shadow, $light-shadow);
+      outline: none;
+    }
+    &:focus{
       outline: none;
     }
   }
@@ -59,7 +64,7 @@ form {
   outline: none;
   margin: 1rem;
   border-radius: 8px;
-  box-shadow: 9px 9px 16px $dark-shadow, -9px -9px 16px $dark-shadow;
+  @include neu-shadows($back-ground, $dark-shadow, $light-shadow);
   position: relative;
   display: inline-block;
   width: 60px;

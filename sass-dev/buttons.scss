@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 .btn {
   display: block;
@@ -8,12 +9,14 @@
   margin: 1rem;
   font-weight: bolder;
   font-family: $fontname;
-  background: $back-ground;
-  box-shadow: 9px 9px 16px $dark-shadow, -9px -9px 16px $light-shadow;
+  @include neu-shadows($back-ground, $dark-shadow, $light-shadow);
   outline: none;
   transition: ease-in-out 250ms;
   &:hover {
-    box-shadow: -9px -9px 16px $dark-shadow, 9px 9px 16px $light-shadow;
+    @include neu-hover-shadow($dark-shadow, $light-shadow);
+    outline: none;
+  }
+  &:focus {
     outline: none;
   }
 }

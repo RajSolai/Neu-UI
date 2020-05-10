@@ -1,11 +1,16 @@
 /* font and text */
-/* Normal mode colours */
+/* Normal mode Colours */
+/* Dark Mode Colours */
+/* font and text */
+/* Normal mode Colours */
+/* Dark Mode Colours */
 .card {
   margin: 1rem;
   border-radius: 8px;
   background: "Lato";
-  -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
-          box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(163, 177, 198, 0.6);
+  background-color: #e0e5ec;
+  -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+          box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
 }
 
 .card-header {

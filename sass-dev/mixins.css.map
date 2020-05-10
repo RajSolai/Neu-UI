@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "ACAA,mBAAmB;AAKnB,yBAAyB",
+    "mappings": "ACAA,mBAAmB;AAKnB,yBAAyB;AAKzB,uBAAuB",
     "sources": [
         "mixins.scss",
         "variables.scss"

@@ -5,7 +5,7 @@
   padding: 1rem;
   border-radius: 8px;
   background-color: $back-ground;
-  box-shadow: 9px 9px 16px $dark-shadow, -9px -9px 16px $dark-shadow;
+  box-shadow: 9px 9px 16px $dark-shadow, -9px -9px 16px $light-shadow;
   @media screen and (max-width: 600px) {
     padding: 2rem;
     margin: 2rem;
@@ -21,4 +21,13 @@
 @mixin margins($margin, $padding) {
   padding: $margin;
   margin: $padding;
+}
+
+@mixin neu-shadows($bgcolor,$dark,$light) {
+  background-color: $bgcolor;
+  box-shadow: 9px 9px 16px $dark, -9px -9px 16px $light;
+}
+
+@mixin neu-hover-shadow($dark,$light) {
+  box-shadow: -9px -9px 16px $dark, 9px 9px 16px $light;
 }

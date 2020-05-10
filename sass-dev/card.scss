@@ -1,10 +1,11 @@
 @import "variables";
+@import "mixins";
 
 .card {
   margin: 1rem;
   border-radius: 8px;
   background: $fontname;
-  box-shadow: 9px 9px 16px $dark-shadow, -9px -9px 16px $dark-shadow;
+  @include neu-shadows($back-ground, $dark-shadow, $light-shadow);
 }
 .card-header {
   padding: 0.5rem;

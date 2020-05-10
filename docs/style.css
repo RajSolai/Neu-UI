@@ -98,6 +98,25 @@ form {
   outline: none;
   transition: ease-in-out 250ms;
 }
+.instal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 12rem;
+}
+.cheatc{
+  margin: 0 3rem 0 3rem;
+}
+code {
+  text-align: center;
+  background-color: #e0e5ec;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  display: block;
+  width: 50%;
+  padding: 2rem;
+}
 .btn-docs {
   border: solid 0px;
   border-radius: 8px;
